@@ -1,0 +1,23 @@
+.title {
+  position: relative;
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+}
+
+.title::after {
+  content: attr(data-duplicate-text);
+  font-size: 26px;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  aria-hidden: true;
+}
+
+.title[data-duplicate-text]::after {
+  content: attr(data-duplicate-text);
+}
