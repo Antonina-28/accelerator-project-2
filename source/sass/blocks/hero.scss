@@ -78,6 +78,7 @@
   @media (min-width: $desktop-width) {
     width: 780px;
     left: 120px;
+    top: 5px;
     margin-bottom: 7px;
     text-align: left;
     align-items: flex-start;
@@ -164,7 +165,7 @@
     display: flex;
     gap: 10px;
     position: absolute;
-    bottom: 85px;
+    bottom: 80px;
     left: 120px;
     z-index: 1;
   }
@@ -213,7 +214,7 @@
   z-index: 1;
 
   @media (min-width: $desktop-width) {
-    bottom: 97px;
+    bottom: 92px;
     left: auto;
     right: 70px;
   }
