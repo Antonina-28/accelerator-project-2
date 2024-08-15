@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
@@ -14,37 +15,111 @@
 
 .training__wrapper {
   padding: 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 45px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 46px 120px 40px;
+  }
 }
 
 .training__title {
   margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.training__text {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .training__text p {
   margin: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+  }
 }
 
 .training__container {
   position: relative;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
 }
 
 .training__subtitle {
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.training__buttons {
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
+  }
 }
 
 .training__list {
   display: flex;
-  width: 290px;
-  overflow: hidden;
   gap: 15px;
+  width: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 679px;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .training__item {
   min-width: 290px;
   padding: 15px;
   border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @media (min-width: $tablet-width) {
+    min-width: 213px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    padding-bottom: 13px;
+  }
 }
 
 .training__image {
@@ -53,6 +128,14 @@
   display: block;
   object-fit: cover;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 181px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
 }
 
 .training__content {
@@ -66,6 +149,15 @@
   width: 234px;
   line-height: 16px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    letter-spacing: -0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 229px;
+  }
 }
 
 .training__link {
@@ -80,4 +172,199 @@
   margin: 0;
   font-size: 12px;
   line-height: 16px;
+}
+
+.training__learning {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 100px;
+    letter-spacing: -0.2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 27px;
+  }
+}
+
+.training__sublist {
+  position: relative;
+  display: grid;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 232px 272px;
+    grid-template-rows: min-content min-content;
+    justify-content: space-between;
+    gap: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 0;
+    justify-content: flex-start;
+  }
+}
+
+.training__sublist::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 183px;
+  background-color: $additional;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 2px;
+    width: 1180px;
+    right: 0;
+    left: auto;
+    top: auto;
+    bottom: -11px;
+  }
+}
+
+.training__subitem {
+  position: relative;
+  margin-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 45px;
+  }
+}
+
+.training__subitem:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 41px;
+  }
+}
+
+.training__subitem:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-left: 42px;
+  }
+}
+
+.training__subitem:nth-child(3) .training__description {
+  @media (min-width: $desktop-width) {
+    width: 204px;
+  }
+}
+
+.training__subitem:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 49px;
+  }
+}
+
+.training__subitem::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $additional;
+  left: -63px;
+  top: 52%;
+  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    left: -25px;
+    top: auto;
+    transform: none;
+    bottom: -16px;
+  }
+}
+
+.training__subitem::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  top: 1px;
+  left: -34px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+    left: -35px;
+  }
+}
+
+.training__subitem--map::before {
+  background-image: url("../__spritemap#sprite-map-vector-view");
+}
+
+.training__subitem--boots::before {
+  background-image: url("../__spritemap#sprite-boots-view");
+}
+
+.training__subitem--trees::before {
+  background-image: url("../__spritemap#sprite-trees-view");
+}
+
+.training__subitem--mountain::before {
+  background-image: url("../__spritemap#sprite-mountain-view");
+}
+
+.training__subitem:nth-child(3)::after {
+  @media (min-width: $desktop-width) {
+    left: -46px;
+  }
+}
+
+.training__subitem:last-child .training__description {
+  width: 200px;
+}
+
+.training__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  width: 212px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
