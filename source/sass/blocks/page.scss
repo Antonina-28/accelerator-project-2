@@ -14,30 +14,31 @@
   }
 }
 
-.page-body::before {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "";
-    width: 602px;
-    height: 100%;
-    background-image:
-      image-set(url("../../img/background1-tablet.webp") 1x type("image/webp"),
-      url("../../img/background1-tablet.png") 1x,
-      url("../../img/background1-tablet@2x.webp") 2x type("image/webp"),
-      url("../../img/background1-tablet@2x.png") 2x);
-    background-repeat: no-repeat;
-    left: 343px;
-    top: 1024px;
-    z-index: -1;
-  }
+// .page-body::before {
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     content: "";
+//     width: 426px;
+//     height: 100%;
+//     background-image:
+//       image-set(url("../../img/background1-tablet.webp") 1x type("image/webp"),
+//       url("../../img/background1-tablet.png") 1x,
+//       url("../../img/background1-tablet@2x.webp") 2x type("image/webp"),
+//       url("../../img/background1-tablet@2x.png") 2x);
+//     background-repeat: no-repeat;
+//     left: 343px;
+//     top: 1024px;
+//     z-index: -1;
+//   }
 
-  @media (min-width: $desktop-width) {
-    background-image:
-      image-set(url("../../img/background1-desktop.webp") 1x type("image/webp"),
-      url("../../img/background1-desktop.png") 1x,
-      url("../../img/background1-desktop@2x.webp") 2x type("image/webp"),
-      url("../../img/background1-desktop@2x.png") 2x);
-    top: 800px;
-    left: 837px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     width: 602px;
+//     background-image:
+//       image-set(url("../../img/background1-desktop.webp") 1x type("image/webp"),
+//       url("../../img/background1-desktop.png") 1x,
+//       url("../../img/background1-desktop@2x.webp") 2x type("image/webp"),
+//       url("../../img/background1-desktop@2x.png") 2x);
+//     top: 800px;
+//     left: 837px;
+//   }
+// }
