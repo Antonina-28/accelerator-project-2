@@ -29,13 +29,13 @@
 
   @media (min-width: $tablet-width) {
     width: 542px;
-    height: 700px;
+    height: 713px;
     background-image:
       image-set(url("../../img/about-tablet.webp") 1x type("image/webp"),
       url("../../img/about-tablet.jpg") 1x,
       url("../../img/about-tablet@2x.webp") 2x type("image/webp"),
       url("../../img/about-tablet@2x.jpg") 2x);
-    background-position: left bottom 56%;
+    background-position: left bottom 57%;
     z-index: -1;
   }
 
@@ -55,7 +55,7 @@
   padding: 421px 15px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 48px 40px 450px;
+    padding: 46px 48px 40px 450px;
   }
 
   @media (min-width: $desktop-width) {
