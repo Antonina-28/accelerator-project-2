@@ -70,7 +70,7 @@
             <div class="hero__content">
               <h2>Захватывающие вершины Кавказа</h2>
               <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-              <button class="hero__button" type="button">Смотреть тур</button>
+              <button class="hero__button button" type="button">Смотреть тур</button>
             </div>
             <div class="hero__info">
               <span class="hero__text hero__text--duration">6 дней/5 ночей</span>
@@ -89,7 +89,7 @@
             <div class="hero__content">
               <h2>Невероятная природа Камчатки</h2>
               <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-              <button class="hero__button" type="button">Смотреть тур</button>
+              <button class="hero__button button" type="button">Смотреть тур</button>
             </div>
             <div class="hero__info">
               <span class="hero__text hero__text--duration">9 дней/10 ночей</span>
@@ -108,7 +108,7 @@
             <div class="hero__content">
               <h2>Магические пейзажи Алтайского Края</h2>
               <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-              <button class="hero__button" type="button">Смотреть тур</button>
+              <button class="hero__button button" type="button">Смотреть тур</button>
             </div>
             <div class="hero__info">
               <span class="hero__text hero__text--duration">8 дней/7 ночей</span>
@@ -697,14 +697,14 @@
             </div>
             <div class="form__container">
               <div class="form__item form__item--phone">
-                <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[0-9]+" required>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="89876543210" pattern="[0-9]+" required>
                 <label class="form__label" for="phone">Телефон</label>
               </div>
               <div class="form__item form__item--email">
-                <input class="form__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(|[.рф])" required>
+                <input class="form__input" type="email" id="email" name="email" placeholder="keks@mail.ru" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(|[.рф])" required>
                 <label class="form__label" for="email">Email</label>
               </div>
-              <button class="form__button" type="submit">Отправить</button>
+              <button class="form__button button" type="submit">Отправить</button>
             </div>
           </form>
         </div>
@@ -713,24 +713,26 @@
     <footer class="footer" data-test="footer">
       <section class="footer__contacts contacts" id="contacts">
         <div class="contacts__wrapper">
-          <h3 class="contacts__title title" data-duplicate-text="Контакты">Контакты</h3>
-          <div class="contacts__text">
-            <p>Свяжитесь с нами любым удобным  для вас способом или приходите  к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          <div class="contacts__container">
+            <h3 class="contacts__title title" data-duplicate-text="Контакты">Контакты</h3>
+            <div class="contacts__text">
+              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            </div>
+            <ul class="contacts__list list">
+              <li class="contacts__item contacts__item--phone">
+                <h4 class="contacts__subtitle">Телефон</h4>
+                <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <h4 class="contacts__subtitle">Email</h4>
+                <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item contacts__item--address">
+                <h4 class="contacts__subtitle">Адрес</h4>
+                <address class="contacts__address contacts__link">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+              </li>
+            </ul>
           </div>
-          <ul class="contacts__list list">
-            <li class="contacts__item contacts__item--phone">
-              <h4 class="contacts__subtitle">Телефон</h4>
-              <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
-            </li>
-            <li class="contacts__item contacts__item--email">
-              <h4 class="contacts__subtitle">Email</h4>
-              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-            </li>
-            <li class="contacts__item contacts__item--address">
-              <h4 class="contacts__subtitle">Адрес</h4>
-              <address class="contacts__address contacts__link">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
-            </li>
-          </ul>
           <div class="contacts__map">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="600" height="324">
@@ -744,61 +746,63 @@
         </div>
       </section>
       <div class="footer__wrapper">
-        <svg class="footer__logo logo" width="142" height="42">
-          <use href="/__spritemap#sprite-logotype"></use>
-        </svg>
-        <nav class="footer__nav">
-          <ul class="footer__list list">
-            <li class="footer__item">
-              <a class="footer__link" href="#tours">Туры</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#training">Обучение</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#about">О нас</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#reviews">Отзывы</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#photos">Фотографии</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="footer__phone" href="tel:88007253232">8 800 725-32-32</a>
-      </div>
-      <ul class="footer__social social list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">Мы в ВКонтакте</span>
-            <svg class="social__icon" width="17" height="9" aria-hidden="true">
-              <use href="/__spritemap#sprite-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--ok" href="#">
-            <span class="visually-hidden">Мы в Одноклассниках</span>
-            <svg class="social__icon" width="10" height="16" aria-hidden="true">
-              <use href="/__spritemap#sprite-ok"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--reddit" href="#">
-            <span class="visually-hidden">Мы в Reddit</span>
-            <svg class="social__icon" width="15" height="15" aria-hidden="true">
-              <use href="/__spritemap#sprite-reddit"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link link" href="#">Политика конфиденциальности</a>
+        <div class="footer__container">
+          <svg class="footer__logo logo" width="142" height="42">
+            <use href="/__spritemap#sprite-logotype"></use>
+          </svg>
+          <nav class="footer__nav">
+            <ul class="footer__list list">
+              <li class="footer__item">
+                <a class="footer__link" href="#tours">Туры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#training">Обучение</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#about">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#photos">Фотографии</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="footer__phone" href="tel:88007253232">8 800 725-32-32</a>
+        </div>
+        <ul class="footer__social social list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+              <svg class="social__icon" width="17" height="9" aria-hidden="true">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--ok" href="#">
+              <span class="visually-hidden">Мы в Одноклассниках</span>
+              <svg class="social__icon" width="10" height="16" aria-hidden="true">
+                <use href="/__spritemap#sprite-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--reddit" href="#">
+              <span class="visually-hidden">Мы в Reddit</span>
+              <svg class="social__icon" width="15" height="15" aria-hidden="true">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link link" href="#">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>

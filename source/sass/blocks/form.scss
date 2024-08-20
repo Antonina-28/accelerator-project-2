@@ -25,6 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 760px;
     background-image:
       image-set(url("../../img/form-desktop.webp") 1x type("image/webp"),
       url("../../img/form-desktop.jpg") 1x,
@@ -159,10 +160,24 @@
   padding: 16px 15px;
   border-radius: 2px;
   border: 1px solid $base-white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 360px;
     padding: 19px 30px;
+  }
+
+  &:hover {
+    border: 1px solid $additional;
+  }
+
+  &:focus {
+    border: 1px solid $base-primary;
+  }
+
+  &:disabled {
+    border: 1px solid $condition-disabled;
+    cursor: none;
   }
 }
 
@@ -174,6 +189,7 @@
   color: $base-white;
   background-color: $additional;
   border: 1px solid $additional;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 20px;
@@ -181,6 +197,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 180px;
+    min-height: 56px;
   }
 }
 

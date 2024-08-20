@@ -25,27 +25,27 @@
   }
 
   &:hover {
-    background-color: $base-white;
     border: 1px solid $condition-active;
     color: $condition-active;
+    background-color: $base-white;
   }
 
   &:focus {
-    background-color: $base-white;
     border: 1px solid $base-white;
     color: $condition-active;
+    background-color: $base-white;
   }
 
   &:active {
-    background-color: $condition-active;
     border: 1px solid $condition-active;
     color: $base-white;
+    background-color: $condition-active;
   }
 
   &:disabled {
-    background-color: $condition-disabled;
     border: 1px solid $condition-disabled;
     color: $base-white;
+    background-color: $condition-disabled;
   }
 }
 

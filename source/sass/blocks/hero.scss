@@ -124,38 +124,11 @@
 
 .hero__button {
   min-width: 180px;
+  min-height: 56px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
   padding: 20px 20px 18px;
-  background-color: $additional;
-  border: 1px solid $additional;
-  color: $base-white;
-  cursor: pointer;
-
-  &:hover {
-    border: 1px solid $condition-active;
-    color: $condition-active;
-    background-color: $base-white;
-  }
-
-  &:focus {
-    border: 1px solid $base-white;
-    color: $condition-active;
-    background-color: $base-white;
-  }
-
-  &:active {
-    border: 1px solid $condition-active;
-    color: $base-white;
-    background-color: $condition-active;
-  }
-
-  &:disabled {
-    border: 1px solid $condition-disabled;
-    color: $base-white;
-    background-color: $condition-disabled;
-  }
 }
 
 .hero__info {
