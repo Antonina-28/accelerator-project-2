@@ -598,7 +598,7 @@
         <div class="gallery__wrapper">
           <h3 class="gallery__title title" data-duplicate-text="Фотогалерея">Фотогалерея</h3>
           <div class="gallery__discription">
-            <p>Добавляйте фото с хэштегом #лайфтур, а&nbsp;также&nbsp;отмечайте&nbsp;нас&nbsp;на&nbsp;фото.&nbsp;Лучшие фотографии украсят этот раздел нашего сайта.</p>
+            <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           </div>
           <div class="gallery__buttons button__wrapper">
             <button class="gallery__button gallery__button--prev button button--prev" type="button">
@@ -690,7 +690,23 @@
       </section>
       <section class="form" data-test="form">
         <div class="form__wrapper">
-          <h3>Остались вопросы?</h3>
+          <form class="form__sending" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form__text">
+              <h3>Остались вопросы?</h3>
+              <p>Заполните форму и наш оператор<br> свяжется<br> с вами для консультации.</p>
+            </div>
+            <div class="form__container">
+              <div class="form__item form__item--phone">
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[0-9]+" required>
+                <label class="form__label" for="phone">Телефон</label>
+              </div>
+              <div class="form__item form__item--email">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(|[.рф])" required>
+                <label class="form__label" for="email">Email</label>
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -698,6 +714,33 @@
       <section class="footer__contacts contacts" id="contacts">
         <div class="contacts__wrapper">
           <h3 class="contacts__title title" data-duplicate-text="Контакты">Контакты</h3>
+          <div class="contacts__text">
+            <p>Свяжитесь с нами любым удобным  для вас способом или приходите  к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          </div>
+          <ul class="contacts__list list">
+            <li class="contacts__item contacts__item--phone">
+              <h4 class="contacts__subtitle">Телефон</h4>
+              <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <h4 class="contacts__subtitle">Email</h4>
+              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <h4 class="contacts__subtitle">Адрес</h4>
+              <address class="contacts__address contacts__link">г. Москва, пр-т Мира,<br> д. 14, офис 101</address>
+            </li>
+          </ul>
+          <div class="contacts__map">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x" width="600" height="324">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="340">
+              <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x" width="320" height="343">
+              <source type="image/jpg" media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x" width="600" height="324">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x" width="768" height="340">
+              <img class="contacts__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="343" alt="Фрагмент карты с меткой расположения организации.">
+            </picture>
+          </div>
         </div>
       </section>
       <div class="footer__wrapper">

@@ -95,6 +95,7 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
+    margin-bottom: 85px;
   }
 }
 
@@ -226,8 +227,8 @@
     display: block;
     top: auto;
     right: auto;
-    bottom: 15px;
+    bottom: 100px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-51%);
   }
 }

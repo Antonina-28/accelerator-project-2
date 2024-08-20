@@ -4,5 +4,7 @@
 // import 'swiper/css';
 
 import { clickMenu } from './burger-menu';
+import { validateForm } from './form-validation';
 
 clickMenu();
+validateForm();
