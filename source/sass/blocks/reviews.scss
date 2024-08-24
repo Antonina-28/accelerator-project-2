@@ -39,6 +39,8 @@
 }
 
 .reviews__title::after {
+  top: 2px;
+
   @media (min-width: $desktop-width) {
     top: -23px;
   }
@@ -75,10 +77,13 @@
   justify-content: space-between;
   min-width: 290px;
   padding: 20px;
+  padding-bottom: 17px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  background-color: $base-white;
 
   @media (min-width: $tablet-width) {
     min-width: 565px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: 186px 309px;
   }

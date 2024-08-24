@@ -14,34 +14,36 @@
   }
 }
 
-// .training::before {
-//   @media (min-width: $tablet-width) {
-//     position: absolute;
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     background-image:
-//       image-set(url("../../img/background2-tablet.webp") 1x type("image/webp"),
-//       url("../../img/background2-tablet.png") 1x,
-//       url("../../img/background2-tablet@2x.webp") 2x type("image/webp"),
-//       url("../../img/background2-tablet@2x.png") 2x);
-//     background-repeat: no-repeat;
-//     left: 303px;
-//     top: 612px;
-//   }
+.training::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image:
+      image-set(url("../../img/background2-tablet.webp") 1x type("image/webp"),
+      url("../../img/background2-tablet.png") 1x,
+      url("../../img/background2-tablet@2x.webp") 2x type("image/webp"),
+      url("../../img/background2-tablet@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-position: right top;
+    right: 0;
+    top: 612px;
+  }
 
-//   @media (min-width: $desktop-width) {
-//     background-image:
-//       image-set(url("../../img/background2-desktop.webp") 1x type("image/webp"),
-//       url("../../img/background2-desktop.png") 1x,
-//       url("../../img/background2-desktop@2x.webp") 2x type("image/webp"),
-//       url("../../img/background2-desktop@2x.png") 2x);
-//     left: 806px;
-//   }
-// }
+  @media (min-width: $desktop-width) {
+    background-image:
+      image-set(url("../../img/background2-desktop.webp") 1x type("image/webp"),
+      url("../../img/background2-desktop.png") 1x,
+      url("../../img/background2-desktop@2x.webp") 2x type("image/webp"),
+      url("../../img/background2-desktop@2x.png") 2x);
+  }
+}
 
 .training__wrapper {
   padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 43px 45px 40px;
@@ -62,7 +64,7 @@
 
 .training__text {
   @media (min-width: $desktop-width) {
-    margin-bottom: 46px;
+    margin-bottom: 33px;
   }
 }
 
@@ -83,10 +85,10 @@
 
 .training__container {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,8 +122,10 @@
 
 .training__list {
   display: flex;
-  gap: 15px;
   width: 290px;
+  gap: 15px;
+  overflow: hidden;
+
 
   @media (min-width: $tablet-width) {
     width: 679px;
@@ -137,11 +141,13 @@
 .training__item {
   min-width: 290px;
   padding: 15px;
+  padding-bottom: 13px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {
     min-width: 213px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -193,7 +199,6 @@
   width: 24px;
   height: 24px;
   padding: 8px 5px;
-  border: 1px solid rgba(45, 56, 63, 0.3);
 }
 
 .training__content p {
@@ -204,10 +209,11 @@
 
 .training__learning {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: -0.17px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -246,7 +252,7 @@
   position: absolute;
   content: "";
   width: 2px;
-  height: 183px;
+  height: 89%;
   background-color: $additional;
   left: 6px;
   top: 50%;
@@ -259,7 +265,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     height: 2px;
-    width: 1180px;
+    width: 98%;
     right: 0;
     left: auto;
     top: auto;
@@ -322,8 +328,7 @@
   border-radius: 50%;
   background-color: $additional;
   left: -63px;
-  top: 51%;
-  transform: translateY(-50%);
+  top: 11px;
 
   @media (min-width: $tablet-width) {
     display: none;

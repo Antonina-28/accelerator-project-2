@@ -15,13 +15,14 @@
 }
 
 .button {
+  border: 1px solid $additional;
+  background-color: $additional;
+  color: $base-white;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     width: 37px;
     height: 35px;
-    border: 1px solid $additional;
-    background-color: $additional;
-    color: $base-white;
-    cursor: pointer;
   }
 
   &:hover {

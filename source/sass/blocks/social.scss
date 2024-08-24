@@ -3,6 +3,10 @@
   align-items: center;
   gap: 16px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 18px;
   }
@@ -18,29 +22,6 @@
   @media (min-width: $desktop-width) {
     width: 30px;
   }
-}
-
-.social__link {
-  color: $base-primary;
-  border: 1px solid rgba(45, 56, 63, 0.3);
-
-  &:hover {
-    border: 1px solid $base-primary;
-  }
-
-  &:focus {
-    border: none;
-  }
-
-  &:active {
-    background-color: $additional;
-    color: $base-white;
-  }
-}
-
-.social__link--disabled {
-  color: $base-primary;
-  opacity: 0.3;
 }
 
 .social__link--vk {

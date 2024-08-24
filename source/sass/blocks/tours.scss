@@ -199,10 +199,15 @@
 
 .tours__duration--day::before {
   background-image: url("../__spritemap#sprite-sun-view");
+
+  @media (min-width: $tablet-width) {
+    left: -1px;
+  }
 }
 
 .tours__duration--night::before {
   background-image: url("../__spritemap#sprite-moon-view");
+  background-size: 18px 18px;
 }
 
 .tours__content-title {

@@ -13,7 +13,7 @@
 }
 
 .gallery__wrapper {
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
 .gallery__title {
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;
@@ -47,6 +47,7 @@
 
 .gallery__title::after {
   left: 15px;
+  top: 2px;
 
   @media (min-width: $tablet-width) {
     left: 45px;

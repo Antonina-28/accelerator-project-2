@@ -6,11 +6,11 @@
   padding: 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0;
+    padding: 44px 0 39px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 120px 95px;
+    padding: 96px 120px 91px;
     display: flex;
     align-items: center;
   }
@@ -37,12 +37,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 45px;
     padding-right: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    margin-bottom: 13px;
+    padding-top: 27px;
+    margin-bottom: 6px;
   }
 }
 
@@ -51,6 +52,11 @@
 
   @media (min-width: $tablet-width) {
     left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    top: 10px;
   }
 }
 
@@ -76,11 +82,11 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 }
 
@@ -100,13 +106,17 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin: 0;
-    gap: 34px;
+    gap: 32px;
   }
 }
 
 .contacts__item {
   position: relative;
   padding-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-left: 56px;
@@ -134,9 +144,8 @@
     width: 26px;
     height: 26px;
     background-size: 26px 26px;
-    top: 49%;
+    top: 50%;
     transform: translateY(-50%);
-    left: -1px;
   }
 }
 
@@ -146,10 +155,18 @@
 
 .contacts__item--email::before {
   background-image: url("../__spritemap#sprite-mail-view");
+
+  @media (min-width: $tablet-width) {
+    left: 1px;
+  }
 }
 
 .contacts__item--address::before {
   background-image: url("../__spritemap#sprite-pin-address-view");
+
+  @media (min-width: $tablet-width) {
+    left: 1px;
+  }
 }
 
 .contacts__subtitle {
@@ -161,7 +178,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
