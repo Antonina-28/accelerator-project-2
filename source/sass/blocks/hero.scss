@@ -3,13 +3,16 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1440px;
+    margin-bottom: 107px;
   }
 }
 
@@ -26,12 +29,19 @@
 
 .hero__slider {
   position: relative;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .hero__list {
-  display: flex;
   width: 320px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -142,6 +152,7 @@
     font-size: 77px;
     line-height: 77px;
     margin-bottom: 23px;
+    margin-top: 0;
   }
 }
 
@@ -219,16 +230,19 @@
 .hero__pagination {
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 116px;
   display: flex;
   gap: 20px;
   z-index: 1;
 
+  @media (min-width: $tablet-width) {
+    right: 334px;
+  }
+
   @media (min-width: $desktop-width) {
     bottom: 92px;
     left: auto;
-    right: 70px;
+    right: 120px;
   }
 }
 
@@ -258,6 +272,6 @@
   }
 }
 
-.hero__pagination-button--selected {
+.hero__pagination-button--active {
   background-color: $base-white;
 }

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -121,37 +120,34 @@
 }
 
 .training__list {
-  display: flex;
-  width: 290px;
-  gap: 15px;
-  overflow: hidden;
+  max-width: 290px;
 
 
   @media (min-width: $tablet-width) {
-    width: 679px;
-    gap: 20px;
-    overflow: hidden;
+    max-width: 679px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
 .training__item {
-  min-width: 290px;
+  max-width: 290px;
   padding: 15px;
   padding-bottom: 13px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $base-white;
 
   @media (min-width: $tablet-width) {
-    min-width: 213px;
-    padding-bottom: 14px;
+    max-width: 213px;
+    min-height: 388px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 285px;
+    max-width: 285px;
+    min-height: 356px;
     padding-bottom: 13px;
   }
 }

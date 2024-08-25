@@ -51,9 +51,9 @@
     <main class="main-container">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Путешествуй вместе с Lifetour</h1>
-        <div class="hero__slider">
-          <ul class="hero__list list">
-            <li class="hero__item">
+        <div class="hero__slider swiper" id="swiper-hero">
+          <ul class="hero__list list swiper-wrapper">
+            <li class="hero__item swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero1-desktop.webp 1x, img/hero1-desktop@2x.webp 2x" width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/hero1-tablet.webp 1x, img/hero1-tablet@2x.webp 2x" width="768" height="1034">
@@ -72,7 +72,7 @@
                 <span class="hero__text hero__text--level">Высокая сложность</span>
               </div>
             </li>
-            <li class="hero__item">
+            <li class="hero__item swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero2-desktop.webp 1x, img/hero2-desktop@2x.webp 2x" width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/hero2-tablet.webp 1x, img/hero2-tablet@2x.webp 2x" width="768" height="1034">
@@ -91,7 +91,7 @@
                 <span class="hero__text hero__text--level">Средняя сложность</span>
               </div>
             </li>
-            <li class="hero__item">
+            <li class="hero__item swiper-slide">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero3-desktop.webp 1x, img/hero3-desktop@2x.webp 2x" width="1440" height="800">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/hero3-tablet.webp 1x, img/hero3-tablet@2x.webp 2x" width="768" height="1034">
@@ -111,8 +111,8 @@
               </div>
             </li>
           </ul>
-          <div class="hero__pagination">
-            <button class="hero__pagination-button hero__pagination-button--selected" type="button">
+          <div class="hero__pagination swiper-pagination">
+            <button class="hero__pagination-button" type="button">
               <span class="visually-hidden">1 слайд</span>
             </button>
             <button class="hero__pagination-button" type="button">
@@ -125,11 +125,11 @@
         </div>
       </section>
       <section class="tours" id="tours" data-test="tours">
-        <div class="tours__wrapper">
+        <div class="tours__wrapper swiper">
           <h3 class="tours__title title" data-duplicate-text="Ближайшие туры">Ближайшие туры</h3>
-          <div class="tours__slider">
+          <div class="tours__slider" id="swiper-tours">
             <div class="tours__buttons button-wrapper">
-              <button class="tours__button tours__button--prev button button--prev" type="button" disabled>
+              <button class="tours__button tours__button--prev button button--prev" type="button">
                 <span class="visually-hidden">Назад</span>
                 <svg class="tours__icon icon" width="14" height="8" aria-hidden="true">
                   <use href="/__spritemap#sprite-arrow"></use>
@@ -142,8 +142,8 @@
                 </svg>
               </button>
             </div>
-            <ul class="tours__list list">
-              <li class="tours__item">
+            <ul class="tours__list list swiper-wrapper">
+              <li class="tours__item swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/tours1-desktop.webp 1x, img/tours1-desktop@2x.webp 2x" width="380" height="416">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tours1-tablet.webp 1x, img/tours1-tablet@2x.webp 2x" width="330" height="416">
@@ -179,7 +179,7 @@
                   </dl>
                 </div>
               </li>
-              <li class="tours__item">
+              <li class="tours__item swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/tours2-desktop.webp 1x, img/tours2-desktop@2x.webp 2x" width="380" height="416">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tours2-tablet.webp 1x, img/tours2-tablet@2x.webp 2x" width="330" height="416">
@@ -215,7 +215,7 @@
                   </dl>
                 </div>
               </li>
-              <li class="tours__item">
+              <li class="tours__item swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/tours3-desktop.webp 1x, img/tours3-desktop@2x.webp 2x" width="380" height="416">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tours3-tablet.webp 1x, img/tours3-tablet@2x.webp 2x" width="330" height="416">
@@ -251,7 +251,7 @@
                   </dl>
                 </div>
               </li>
-              <li class="tours__item">
+              <li class="tours__item swiper-slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/tours4-desktop.webp 1x, img/tours4-desktop@2x.webp 2x" width="380" height="416">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/tours4-tablet.webp 1x, img/tours4-tablet@2x.webp 2x" width="330" height="416">
@@ -289,8 +289,8 @@
               </li>
             </ul>
           </div>
-          <a class="tours__link" href="#">Показать все туры</a>
         </div>
+        <a class="tours__link" href="#">Показать все туры</a>
       </section>
       <section class="training" id="training" data-test="training">
         <div class="training__wrapper">
@@ -298,9 +298,9 @@
           <div class="training__text">
             <p>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           </div>
-          <div class="training__container">
+          <div class="training__container swiper">
             <h3 class="training__subtitle title">Наши инструкторы</h3>
-            <div class="training__slider">
+            <div class="training__slider" id="swiper-training">
               <div class="training__buttons button-wrapper">
                 <button class="training__button training__button--prev button button--prev" type="button" disabled>
                   <span class="visually-hidden">Назад</span>
@@ -315,8 +315,8 @@
                   </svg>
                 </button>
               </div>
-              <ul class="training__list list">
-                <li class="training__item">
+              <ul class="training__list list swiper-wrapper">
+                <li class="training__item swiper-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/card1-desktop.webp 1x, img/card1-desktop@2x.webp 2x" width="255" height="200">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/card1-tablet.webp 1x, img/card1-tablet@2x.webp 2x" width="183" height="200">
@@ -336,7 +336,7 @@
                     <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
                   </div>
                 </li>
-                <li class="training__item">
+                <li class="training__item swiper-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/card2-desktop.webp 1x, img/card2-desktop@2x.webp 2x" width="255" height="200">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/card2-tablet.webp 1x, img/card2-tablet@2x.webp 2x" width="183" height="200">
@@ -356,7 +356,7 @@
                     <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
                   </div>
                 </li>
-                <li class="training__item">
+                <li class="training__item swiper-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/card3-desktop.webp 1x, img/card3-desktop@2x.webp 2x" width="255" height="200">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/card3-tablet.webp 1x, img/card3-tablet@2x.webp 2x" width="183" height="200">
@@ -376,7 +376,7 @@
                     <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
                   </div>
                 </li>
-                <li class="training__item">
+                <li class="training__item swiper-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/card4.webp 1x, img/card4@2x.webp 2x" width="255" height="200">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/card4.webp 1x, img/card4@2x.webp 2x" width="183" height="200">
@@ -396,7 +396,7 @@
                     <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
                   </div>
                 </li>
-                <li class="training__item">
+                <li class="training__item swiper-slide">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/card5-desktop.webp 1x, img/card5-desktop@2x.webp 2x" width="255" height="200">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/card5-desktop.webp 1x, img/card5-desktop@2x.webp 2x" width="183" height="200">
@@ -450,9 +450,9 @@
         </div>
       </section>
       <section class="reviews" id="reviews" data-test="reviews">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper swiper">
           <h3 class="reviews__title title" data-duplicate-text="Отзывы">Отзывы</h3>
-          <div class="reviews__slider">
+          <div class="reviews__slider" id="swiper-reviews">
             <div class="reviews__buttons button-wrapper">
               <button class="reviews__button reviews__button--prev button button--prev" type="button" disabled>
                 <span class="visually-hidden">Назад</span>
@@ -467,7 +467,7 @@
                 </svg>
               </button>
             </div>
-            <ul class="reviews__list list">
+            <ul class="reviews__list list swiper-wrapper">
               <li class="reviews__item">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/photo1-desktop.webp 1x, img/photo1-desktop@2x.webp 2x" width="258" height="253">

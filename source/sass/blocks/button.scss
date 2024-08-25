@@ -4,13 +4,13 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    top: 60px;
-    right: 45px;
+    z-index: 10;
+    top: 16px; // для блока туров
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: 120px;
-    right: 120px;
+    top: 13px; // для блока туров
   }
 }
 
@@ -31,7 +31,7 @@
     background-color: $base-white;
   }
 
-  &:focus {
+  &:focus-visible {
     border: 1px solid $base-white;
     color: $condition-active;
     background-color: $base-white;
