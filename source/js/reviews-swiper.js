@@ -22,11 +22,11 @@ const options = {
       spaceBetween: 15,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 1.3,
       spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 1,
+      slidesPerView: 1.7,
       spaceBetween: 120,
     },
   },
