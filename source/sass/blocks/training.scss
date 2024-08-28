@@ -40,7 +40,7 @@
 }
 
 .training__wrapper {
-  padding: 20px 15px;
+  padding: 18px 15px 20px;
   display: flex;
   flex-direction: column;
 
@@ -54,11 +54,19 @@
 }
 
 .training__title {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 15px;
   }
+}
+
+.training__title::after {
+  top: -1px;
 }
 
 .training__text {
@@ -96,13 +104,15 @@
 }
 
 .training__subtitle {
+  padding-top: 17px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 16px;
     padding-bottom: 16px;
     margin-bottom: 0;
   }
@@ -134,8 +144,7 @@
 
 .training__item {
   max-width: 290px;
-  padding: 15px;
-  padding-bottom: 13px;
+  padding: 14px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $base-white;
 
@@ -148,7 +157,6 @@
   @media (min-width: $desktop-width) {
     max-width: 285px;
     min-height: 356px;
-    padding-bottom: 13px;
   }
 }
 
@@ -160,7 +168,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    width: 181px;
+    width: 182px;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,13 +183,16 @@
 
 .training__content h4 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-top: 1px;
+  margin-bottom: 14px;
   width: 234px;
   line-height: 16px;
   font-weight: 700;
+  letter-spacing: -0.2px;
 
   @media (min-width: $tablet-width) {
     width: 157px;
+    margin-bottom: 15px;
     letter-spacing: -0.3px;
   }
 
@@ -194,7 +205,16 @@
   display: flex;
   width: 24px;
   height: 24px;
-  padding: 8px 5px;
+  padding: 6px 4px;
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 2px;
+  }
 }
 
 .training__content p {
@@ -348,6 +368,7 @@
   left: -34px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
+  color: $base-primary;
 
   @media (min-width: $tablet-width) {
     top: 2px;

@@ -35,7 +35,7 @@
     left: 0;
     transform: none;
     width: 542px;
-    height: 714px;
+    height: 713px;
     background-image:
       image-set(url("../../img/about-tablet.webp") 1x type("image/webp"),
       url("../../img/about-tablet.jpg") 1x,
@@ -61,7 +61,7 @@
   padding: 421px 15px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 47px 48px 40px 450px;
+    padding: 46px 48px 40px 450px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +98,7 @@
   font-size: 26px;
   line-height: 26px;
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   opacity: 0.03;
   pointer-events: none;

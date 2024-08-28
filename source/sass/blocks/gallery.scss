@@ -19,11 +19,12 @@
   @media (min-width: $tablet-width) {
     position: relative;
     padding-top: 44px;
+    padding-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 107px;
-    padding-bottom: 6px;
+    padding-bottom: 3px;
   }
 }
 
@@ -102,6 +103,7 @@
 .gallery__buttons {
   @media (min-width: $tablet-width) {
     top: 146px;
+    right: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,7 +147,11 @@
 .gallery__item:nth-child(3),
 .gallery__item:nth-child(6) {
   grid-row: 2/3;
-  align-self: flex-end;
+  align-self: center;
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+  }
 }
 
 .gallery__image {
@@ -153,13 +159,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-// .gallery__item:nth-child(2) .gallery__image,
-// .gallery__item:nth-child(5) .gallery__image {
-//   object-fit: contain;
-// }
-
-// .gallery__item:nth-child(3) .gallery__image,
-// .gallery__item:nth-child(6) .gallery__image {
-//   object-fit: none;
-// }
