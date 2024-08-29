@@ -3,7 +3,7 @@
 }
 
 .contacts__wrapper {
-  padding: 20px 0;
+  padding: 21px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 44px 0 39px;
@@ -32,7 +32,7 @@
 .contacts__title {
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;
@@ -49,6 +49,7 @@
 
 .contacts__title::after {
   left: 15px;
+  top: 2px;
 
   @media (min-width: $tablet-width) {
     left: 45px;

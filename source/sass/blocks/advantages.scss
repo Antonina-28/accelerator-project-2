@@ -217,7 +217,7 @@
 }
 
 .advantages__item--equipment h4::before {
-  background-image: url("../__spritemap#sprite-equipment-view");
+  background-image: url("../__spritemap#sprite-boots-view");
 }
 
 .advantages__item--path h4::before {
@@ -233,14 +233,14 @@
     display: none;
   }
 
-  width: 270px;
+  max-width: 270px;
   margin: 0;
   font-size: 12px;
   line-height: 18px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 284px;
+    max-width: 284px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -250,7 +250,7 @@
       display: block;
     }
 
-    width: 340px;
+    max-width: 340px;
   }
 }
 

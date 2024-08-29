@@ -18,7 +18,7 @@ const options = {
   modules: [Navigation],
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 15,
     },
     768: {

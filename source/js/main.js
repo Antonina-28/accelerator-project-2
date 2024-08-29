@@ -12,6 +12,7 @@ import { flippingThroughTheSliderTours } from './tours-swiper';
 import { flippingThroughTheSliderTraining } from './training-swiper';
 import { flippingThroughTheSliderReviews } from './reviews-swiper';
 import { flippingThroughTheSliderAdvantages } from './advantages-swiper';
+import { flippingThroughTheSliderGallery } from './gallery-swiper';
 
 clickMenu();
 flippingThroughTheSliderHero();
@@ -19,6 +20,7 @@ flippingThroughTheSliderTours();
 flippingThroughTheSliderTraining();
 flippingThroughTheSliderReviews();
 flippingThroughTheSliderAdvantages();
+flippingThroughTheSliderGallery();
 validateForm();
 
 

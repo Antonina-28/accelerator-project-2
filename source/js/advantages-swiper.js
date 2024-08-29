@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 const options = {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  initialSlide: 2,
+  initialSlide: 1,
   centeredSlides: true,
   loop: true,
   slidesPerGroup: 2,
