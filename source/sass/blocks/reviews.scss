@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
@@ -11,57 +10,77 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1440px;
-    padding-top: 37px;
-    margin-bottom: 83px;
   }
 }
 
 .reviews__wrapper {
-  padding: 22px 15px 20px;
+  padding: 20px 15px 11px;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 45px 40px;
+    padding: 40px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 120px;
+    padding: 100px 0 77px;
   }
 }
 
 .reviews__title {
-  margin-bottom: 14px;
+  margin-top: 17px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 45px 18px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 22px 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 17px 120px 21px;
+    margin: 45px 120px 28px;
   }
 }
 
 .reviews__title::after {
-  top: 2px;
+  top: -14px;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+  }
 
   @media (min-width: $desktop-width) {
-    top: -23px;
+    top: -39px;
+  }
+}
+
+.reviews__slider {
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .reviews__buttons {
   @media (min-width: $tablet-width) {
     right: 45px;
+    top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 33px;
+    top: 45px;
     right: 120px;
   }
 }
 
 .reviews__list {
   max-width: 290px;
-  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     max-width: 723px;
@@ -71,7 +90,6 @@
   @media (min-width: $desktop-width) {
     max-width: 1320px;
     margin-left: 120px;
-    margin-bottom: 17px;
   }
 }
 

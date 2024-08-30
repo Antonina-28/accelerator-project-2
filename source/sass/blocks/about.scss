@@ -3,11 +3,9 @@
   display: grid;
   grid-template-columns: 320px;
   justify-content: center;
-  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
-    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +33,7 @@
     left: 0;
     transform: none;
     width: 542px;
-    height: 713px;
+    height: 708px;
     background-image:
       image-set(url("../../img/about-tablet.webp") 1x type("image/webp"),
       url("../../img/about-tablet.jpg") 1x,
@@ -47,7 +45,7 @@
 
   @media (min-width: $desktop-width) {
     width: 660px;
-    height: 602px;
+    height: 578px;
     background-image:
       image-set(url("../../img/about-desktop.webp") 1x type("image/webp"),
       url("../../img/about-desktop.jpg") 1x,
@@ -58,15 +56,14 @@
 }
 
 .about__wrapper {
-  padding: 421px 15px 20px;
+  padding: 421px 15px 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 48px 40px 450px;
+    padding: 44px 48px 40px 450px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 153px 120px 100px 660px;
-    margin-bottom: 109px;
+    padding: 129px 120px 102px 660px;
   }
 }
 
@@ -159,4 +156,8 @@
 
 .about__history p:last-child {
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 78px;
+  }
 }

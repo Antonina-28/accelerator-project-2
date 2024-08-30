@@ -8,7 +8,7 @@
     url("../../img/background-mobile@2x.webp") 2x type("image/webp"),
     url("../../img/background-mobile@2x.png") 2x);
   background-repeat: no-repeat;
-  background-position: right bottom -7px;
+  background-position: right bottom -10px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 768px;
@@ -23,39 +23,49 @@
 .tours__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 23px 15px;
+  padding: 23px 15px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 45px 40px;
+    padding: 44px 45px 39px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 107px 120px 100px;
+    padding: 107px 120px 99px;
   }
 }
 
 .tours__title {
   width: 290px;
-  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 400px;
-    margin-bottom: 17px;
-    padding-top: 17px;
   }
 
   @media (min-width: $desktop-width) {
     width: 542px;
-    margin-bottom: 33px;
-    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.tours__title::after {
+  top: -16px;
+
+  @media (min-width: $tablet-width) {
+    top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -17px;
   }
 }
 
 .tours__slider {
+  padding-top: 22px;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 18px;
     margin-bottom: 26px;
   }
 
@@ -220,6 +230,7 @@
 
   @media (min-width: $tablet-width) {
     width: 260px;
+    letter-spacing: -0.33px;
   }
 }
 
@@ -242,7 +253,7 @@
   column-gap: 8px;
 
   @media (min-width: $tablet-width) {
-    column-gap: 28px;
+    column-gap: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -281,6 +292,10 @@
   letter-spacing: -0.2px;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-left: -1px;
   }
 }

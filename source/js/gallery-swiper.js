@@ -17,13 +17,14 @@ const options = {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 5,
+      spaceBetween: 6,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 5,
+      spaceBetween: 4,
     },
     1440: {
+      loop: false,
       enabled: false,
       slidesPerView: 5,
       spaceBetween: 5,

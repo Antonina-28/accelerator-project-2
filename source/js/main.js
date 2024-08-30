@@ -1,10 +1,3 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
 import { clickMenu } from './burger-menu';
 import { validateForm } from './form-validation';
 import { flippingThroughTheSliderHero } from './hero-swiper';
@@ -14,21 +7,13 @@ import { flippingThroughTheSliderReviews } from './reviews-swiper';
 import { flippingThroughTheSliderAdvantages } from './advantages-swiper';
 import { flippingThroughTheSliderGallery } from './gallery-swiper';
 
-clickMenu();
-flippingThroughTheSliderHero();
-flippingThroughTheSliderTours();
-flippingThroughTheSliderTraining();
-flippingThroughTheSliderReviews();
-flippingThroughTheSliderAdvantages();
-flippingThroughTheSliderGallery();
-validateForm();
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   flippingThroughTheSliderHero();
-// //   playVideo();
-// //   flippingPriceTabs();
-// //   flippingThroughTheSlider();
-// //   initTabs();
-// //   vaildateForm();
-// });
+document.addEventListener('DOMContentLoaded', () => {
+  clickMenu();
+  flippingThroughTheSliderHero();
+  flippingThroughTheSliderTours();
+  flippingThroughTheSliderTraining();
+  flippingThroughTheSliderReviews();
+  flippingThroughTheSliderAdvantages();
+  flippingThroughTheSliderGallery();
+  validateForm();
+});

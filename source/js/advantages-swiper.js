@@ -6,11 +6,12 @@ import 'swiper/css/navigation';
 const options = {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  initialSlide: 1,
+  initialSlide: 2,
   centeredSlides: true,
   loop: true,
   slidesPerGroup: 2,
   simulateTouch: false,
+  watchOverflow: true,
   modules: [Navigation],
   navigation: {
     nextEl: '.advantages__button--next',

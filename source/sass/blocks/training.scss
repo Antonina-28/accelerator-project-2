@@ -40,53 +40,50 @@
 }
 
 .training__wrapper {
-  padding: 18px 15px 20px;
+  padding: 20px 15px 21px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 45px 40px;
+    padding: 44px 45px 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 46px 120px 40px;
+    padding: 47px 120px 40px;
   }
 }
 
 .training__title {
-  margin-bottom: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
-  }
+  padding: 16px 0;
+  margin: 0;
+  margin-bottom: 18px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
 .training__title::after {
   top: -1px;
-}
 
-.training__text {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+  @media (min-width: $tablet-width) {
+    top: 0;
   }
 }
 
 .training__text p {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
     width: 820px;
+    margin-bottom: 32px;
   }
 }
 
@@ -104,28 +101,39 @@
 }
 
 .training__subtitle {
-  padding-top: 17px;
-  padding-bottom: 22px;
+  margin: 0;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 16px;
     margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-top: 30px;
     margin-bottom: 0;
+  }
+}
+
+.training__slider {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
   }
 }
 
 .training__buttons {
   @media (min-width: $tablet-width) {
     top: 13px;
-    right: 0;
+    right: 1px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 12px;
+    top: 26px;
+    right: 0;
   }
 }
 
@@ -225,11 +233,11 @@
 
 .training__learning {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
-  letter-spacing: -0.17px;
+  letter-spacing: -0.15px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -261,6 +269,7 @@
     display: flex;
     gap: 0;
     justify-content: flex-start;
+    margin-bottom: 24px;
   }
 }
 
@@ -344,7 +353,7 @@
   border-radius: 50%;
   background-color: $additional;
   left: -63px;
-  top: 11px;
+  top: 12px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -364,7 +373,7 @@
   content: "";
   width: 25px;
   height: 25px;
-  top: 0;
+  top: 1px;
   left: -34px;
   mask-repeat: no-repeat;
   mask-size: 25px 25px;
