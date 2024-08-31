@@ -665,10 +665,10 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="284" height="463">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery1-tablet.webp 1x, img/gallery1-tablet@2x.webp 2x" width="253" height="418">
-                      <source type="image/webp" srcset="img/gallery1-mobile.webp 1x, img/gallery1-mobile@2x.webp 2x" width="158" height="266">
+                      <source type="image/webp" srcset="img/gallery1.webp 1x, img/gallery1@2x.webp 2x" width="158" height="266">
                       <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery1.jpg 1x, img/gallery1@2x.jpg 2x" width="284" height="463">
                       <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery1-tablet.jpg 1x, img/gallery1-tablet@2x.jpg 2x" width="253" height="418">
-                      <img class="gallery__image" src="img/gallery1-mobile.jpg" srcset="img/gallery1-mobile@2x.jpg 2x" width="158" height="266" alt="Мужчина с рюкзаком на фоне гор.">
+                      <img class="gallery__image" src="img/gallery1.jpg" srcset="img/gallery1@2x.jpg 2x" width="158" height="266" alt="Мужчина с рюкзаком на фоне гор.">
                     </picture>
                   </div>
                 </li>
@@ -680,7 +680,7 @@
                       <source type="image/webp" srcset="img/gallery2-mobile.webp 1x, img/gallery2-mobile@2x.webp 2x" width="157" height="142">
                       <source type="image/jpg" media="(min-width: 1440px)" srcset="img/gallery2.jpg 1x, img/gallery2@2x.jpg 2x" width="284" height="240">
                       <source type="image/jpg" media="(min-width: 768px)" srcset="img/gallery2-tablet.jpg 1x, img/gallery2-tablet@2x.jpg 2x" width="252" height="210">
-                      <img class="gallery__image" src="img/gallery2-mobile.jpg" srcset="img/gallery2-mobile@2x.jpg 2x" width="157" height="142" alt="Компания людей вечером у костра.">
+                      <img class="gallery__image gallery__image--height" src="img/gallery2-mobile.jpg" srcset="img/gallery2-mobile@2x.jpg 2x" width="157" height="142" alt="Компания людей вечером у костра.">
                     </picture>
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery3.webp 1x, img/gallery3@2x.webp 2x" width="284" height="223">
@@ -750,7 +750,7 @@
             </div>
             <div class="form__container">
               <div class="form__item form__item--phone">
-                <input class="form__input" type="tel" id="phone" name="phone" placeholder="89876543210" pattern="[0-9]+" required>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="+79876543210" pattern="[0-9]+" required>
                 <label class="form__label" for="phone">Телефон</label>
               </div>
               <div class="form__item form__item--email">
@@ -774,11 +774,11 @@
             <ul class="contacts__list list">
               <li class="contacts__item contacts__item--phone">
                 <h4 class="contacts__subtitle">Телефон</h4>
-                <a class="contacts__link" href="tel:89837454545">+7 983 745-45-45</a>
+                <a class="contacts__link contacts__link--condition" href="tel:89837454545">+7 983 745-45-45</a>
               </li>
               <li class="contacts__item contacts__item--email">
                 <h4 class="contacts__subtitle">Email</h4>
-                <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                <a class="contacts__link contacts__link--condition" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </li>
               <li class="contacts__item contacts__item--address">
                 <h4 class="contacts__subtitle">Адрес</h4>

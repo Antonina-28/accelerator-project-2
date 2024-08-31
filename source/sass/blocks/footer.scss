@@ -115,6 +115,7 @@
 
 .footer__link--disabled {
   color: $condition-disabled;
+  cursor: default;
 }
 
 .footer__phone {
@@ -148,4 +149,5 @@
 
 .footer__phone--disabled {
   color: $condition-disabled;
+  cursor: default;
 }

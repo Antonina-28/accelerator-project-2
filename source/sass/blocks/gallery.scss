@@ -14,11 +14,12 @@
 
 .gallery__wrapper {
   padding-top: 20px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 40px;
+    padding-bottom: 3px;
+    padding-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,14 +30,17 @@
 .gallery__title {
   padding: 0 15px;
   margin-top: 17px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     padding: 0 45px;
-    margin-top: 22px;
+    margin-top: 21px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 119px;
+    margin-top: 22px;
   }
 }
 
@@ -57,7 +61,7 @@
 
 .gallery__discription p {
   margin: 0;
-  padding: 10px 15px 30px;
+  padding: 10px 15px 31px;
   font-size: 12px;
   line-height: 18px;
 
@@ -88,7 +92,7 @@
 
 .gallery__buttons {
   @media (min-width: $tablet-width) {
-    top: 108px;
+    top: 107px;
     right: 45px;
   }
 
@@ -140,7 +144,7 @@
 .gallery__content {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 6px;
 
   @media (min-width: $desktop-width) {
     gap: 7px;
@@ -151,4 +155,12 @@
   display: block;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery__item:nth-child(1) .gallery__image {
+  height: 267px;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }

@@ -207,6 +207,25 @@
   }
 }
 
+.contacts__link--condition {
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $additional;
+  }
+
+  &:active {
+    color: $condition-active;
+  }
+}
+
+.contacts__link--condition-disabled {
+  color: $condition-disabled;
+  cursor: default;
+}
+
 .contacts__item--phone,
 .contacts__item--email {
   cursor: pointer;

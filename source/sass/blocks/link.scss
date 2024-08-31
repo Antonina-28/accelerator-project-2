@@ -17,6 +17,7 @@
 }
 
 .link--disabled {
+  cursor: default;
   color: $base-primary;
   opacity: 0.3;
 }
