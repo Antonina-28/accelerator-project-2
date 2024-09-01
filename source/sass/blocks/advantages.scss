@@ -80,8 +80,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 23px;
-    margin-bottom: 32px;
+    max-width: 1200px;
+    margin: 23px auto 32px;
   }
 }
 

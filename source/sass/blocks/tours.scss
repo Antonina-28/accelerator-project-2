@@ -385,6 +385,7 @@
 
 .tours__link--disabled {
   color: $condition-disabled;
+  cursor: default;
 
   &::after {
     background-color: $condition-disabled;

@@ -5,12 +5,12 @@
     display: block;
     position: absolute;
     z-index: 10;
-    top: 16px; // для блока туров
+    top: 16px;
     right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    top: 13px; // для блока туров
+    top: 13px;
   }
 }
 
@@ -21,8 +21,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 37px;
-    height: 35px;
+    min-width: 37px;
+    min-height: 35px;
   }
 
   &:hover {

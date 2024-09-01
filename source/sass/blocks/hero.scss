@@ -137,15 +137,18 @@
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
+  max-height: 100px;
 
   @media (min-width: $tablet-width) {
     font-size: 56px;
     line-height: 56px;
     margin-bottom: 13px;
     margin-top: 4px;
+    max-height: 448px;
   }
 
   @media (min-width: $desktop-width) {
+    max-height: 400px;
     font-size: 77px;
     line-height: 77px;
     margin-bottom: 23px;
@@ -157,26 +160,35 @@
   font-size: 15px;
   margin: 0;
   margin-bottom: 60px;
+  max-height: 160px;
+  overflow: auto;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 24px;
     width: 500px;
+    max-height: 350px;
     margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
     width: 464px;
+    max-height: 195px;
   }
 }
 
 .hero__button {
-  min-width: 180px;
+  max-width: 180px;
   min-height: 56px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  padding: 20px 20px 18px;
+  padding: 20px 32px 18px;
+  word-break: break-all;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 33px;
+  }
 }
 
 .hero__info {

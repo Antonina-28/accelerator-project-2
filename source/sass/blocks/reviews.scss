@@ -31,10 +31,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 24px 45px;
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 45px 120px 28px;
+    max-width: 1000px;
   }
 }
 
@@ -144,12 +146,18 @@
 }
 
 .reviews__content {
+  max-height: 258px;
+  overflow: scroll;
+
   @media (min-width: $tablet-width) {
     width: 299px;
+    max-height: 237px;
   }
 
   @media (min-width: $desktop-width) {
     width: 352px;
+    max-height: 253px;
+    overflow: auto;
   }
 }
 
@@ -169,16 +177,21 @@
 }
 
 .reviews__text {
+  max-height: 208px;
+  overflow: scroll;
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-top: 4px;
     margin-bottom: 25px;
+    max-height: 172px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -2px;
     margin-bottom: 4px;
+    max-height: 208px;
+    overflow: auto;
   }
 }
 
