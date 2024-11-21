@@ -96,14 +96,14 @@
   }
 }
 
-.hero__item:nth-child(2) .hero__content {
+.hero__item--photo .hero__content {
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     top: 137px;
   }
 }
 
-.hero__item:nth-child(2) .hero__content::after {
+.hero__item--photo .hero__content::after {
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";

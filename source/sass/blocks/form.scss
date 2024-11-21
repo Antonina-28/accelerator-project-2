@@ -12,7 +12,7 @@
     url("/img/form-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 320px 638px;
+  background-size: 100% 638px;
 
   @media (min-width: $tablet-width) {
     min-height: 680px;
@@ -21,7 +21,7 @@
       url("/img/form-tablet.jpg") 1x,
       url("/img/form-tablet@2x.webp") 2x type("image/webp"),
       url("/img/form-tablet@2x.jpg") 2x);
-    background-size: 768px 680px;
+    background-size: 100% 680px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
       url("/img/form-desktop.jpg") 1x,
       url("/img/form-desktop@2x.webp") 2x type("image/webp"),
       url("/img/form-desktop@2x.jpg") 2x);
-    background-size: 1440px 760px;
+    background-size: 100% 760px;
   }
 }
 

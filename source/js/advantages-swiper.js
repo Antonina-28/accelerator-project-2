@@ -17,6 +17,22 @@ const options = {
     nextEl: '.advantages__button--next',
     prevEl: '.advantages__button--prev',
   },
+  // breakpoints: {
+  //   1440: {
+  //     enabled: 'true',
+  //     width: 3660,
+  //     loop: true,
+  //     spaceBetween: 30,
+
+  //     slidesPerView: 9,
+  //     loopAddBlankSlides: true,
+  //     slidesPerGroup: 2,
+  //     centeredSlides: true,
+
+  //     allowTouchMove: false,
+  //     initialSlide: 2,
+  //   }
+  // }
 };
 
 const initializeSwiper = () => {

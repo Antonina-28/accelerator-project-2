@@ -3,6 +3,10 @@ const emailInput = document.querySelector('#email');
 const sectionForm = document.querySelector('.form__sending');
 const formButton = document.querySelector('.form__sending .form__button');
 
+function filterPhoneInput() {
+  phoneInput.value = phoneInput.value.replace(/[^+\d]/g, '');
+}
+
 function validatePhone() {
   const phonePattern = /^\+\d+$/;
   if (!phonePattern.test(phoneInput.value)) {
@@ -24,6 +28,7 @@ function validateEmail() {
 }
 
 export function validateForm() {
+  phoneInput.addEventListener('input', filterPhoneInput);
 
   formButton.addEventListener('click', (e) => {
     e.preventDefault();
